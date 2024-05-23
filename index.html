@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+</style>
+</head>
+<body style="background-color:white;">
+<h1> Personagens Inquisição 2</h3>
+
+
+<button class="accordion">Stalvom Skullroot</button>
+<div class="panel">
+  <p>Halfling, famoso arqueólogo e pesquisador, amigo de todos. Mandou a carta para os personagens e foi assassinado na primeira sessão.</p>
+    <img src="https://i.imgur.com/D273KxE.png" width="20%"/>
+</div>
+
+<button class="accordion">Miriani </button>
+<div class="panel">
+  <p>Martinheiro bebado que está ajudando o grupo a navegar por ilhas.width="20%"</p>
+    <img src="https://i.imgur.com/Eg8sg7M.jpg" width="20%"/>
+</div>
+
+<button class="accordion">Vivienne Four-nir</button>
+<div class="panel">
+  <p>Nova Rainha de Yer'u. Tem alguma ligação com ataque a Alameda das Flores, e foi quem coagiu o antigo rei. Utilizou algum poder para paralizar o Aghonius com o olhar.</p>
+    <img src="https://i.imgur.com/lKerhuN.png"width="20%"/>
+</div>
+
+<button class="accordion">???</button>
+<div class="panel">
+  <p>Mago de fogo do qual foi humilhado por Dahlia.</p>
+    <img src="https://i.imgur.com/QvYKTH6.jpg"width="20%"/>
+</div>
+
+<button class="accordion">Victor Thunderfall</button>
+<div class="panel">
+  <p>Príncipe vampiro da cidade de Ravud, o qual o grupo ajudou a libertar as tormentas de sua mãe. Entregou um cachecol e uma carruagem para o grupo, e falou sobre Konat.</p>
+    <img src="https://i.imgur.com/HqAx6rC.png"width="20%"/>
+</div>
+
+<button class="accordion">Yer-Nir</button>
+<div class="panel">
+  <p>Ex-Rei de Yer'u, do qual estava coagido a deixar a Alameda das Flores ser destruida e passar seu trono. Foi morto pelo Kraken.</p>
+    <img src="https://i.imgur.com/Orp5gEG.png"width="20%"/>
+</div>
+
+<button class="accordion">Skillgrumm Stronggut</button>
+<div class="panel">
+  <p>Martinheiro bebado que está ajudando o grupo a navegar por ilhas.</p>
+    <img src="https://i.imgur.com/UDJBC5O.png"width="20%"/>
+</div>
+
+<button class="accordion">Kson Konat</button>
+<div class="panel">
+  <p>Halfling que fez o barco</p>
+    <img src="https://i.imgur.com/SOqVuQ0.png"width="20%"/>
+</div>
+
+<button class="accordion">Gondral Grimspine</button>
+<div class="panel">
+  <p>Fantasma que falou para o grupo sobre seu tesouro enterrado.</p>
+    <img src="https://i.imgur.com/cLDEV3o.png"width="20%"/>
+</div>
+
+<button class="accordion">Gondral Grimspine</button>
+<div class="panel">
+  <p>Fantasma que falou para o grupo sobre seu tesouro enterrado.</p>
+    <img src="https://i.imgur.com/cLDEV3o.png"width="20%"/>
+</div>
+
+<button class="accordion">Wekneazz</button>
+<div class="panel">
+  <p>Necromante Hobgoblin que almeja a destruição das outras raças pois acredita que eles possuem uma vantagem injusta.</p>
+    <img src="https://i.imgur.com/z74CqnH.jpeg"width="20%"/>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
